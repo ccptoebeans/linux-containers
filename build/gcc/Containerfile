@@ -24,6 +24,9 @@ RUN apt-get update && apt-get install --no-install-recommends -yq \
     cmake \
     git \
     ninja-build \
+    doxygen \
+    # graphviz required by doxygen
+    graphviz \
     # Clean up \
     && apt-get autoremove -y \
     && apt-get clean -y \
